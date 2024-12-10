@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Evaluación</title>
+    <link rel="stylesheet" href="formulario.css">
+    <script type="module" src="formulario.js" defer></script>
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./img/Logos_Mesa de trabajo 1 copia.png" alt="Logo" />
+        </div>
+        <div class="nav-icons">
+            <button id="btn-back">
+                <img src="./img/flecha-izquierda.png" alt="Volver" class="icon">
+            </button>
+            <button id="btn-logout">
+                <img src="./img/cerrar-sesion.png" alt="Cerrar sesión" class="icon">
+            </button>
+        </div>
+    </nav>
+    <h1>Formulario de Evaluación</h1>
+    <form id="formulario-evaluacion">
+        <label for="evaluador">Nombre del Evaluador:</label>
+        <input type="text" id="evaluador" name="evaluador" readonly>
+        
+        <label for="nombreCliente">Nombre del Cliente:</label>
+        <input type="text" id="nombreCliente" name="nombreCliente" required>
+        
+        <input type="submit" value="Enviar">
+    </form>
+    <script src="navbar.js"></script>
+</body>
+</html>

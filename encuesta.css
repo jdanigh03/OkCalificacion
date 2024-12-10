@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #002366;
+    margin: 0;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#encuesta-satisfaccion {
+    margin-top: 20px;
+    display: flex; /* Flexbox para mostrar en fila */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 20px; /* Espaciado entre las caritas */
+    flex-wrap: nowrap; /* Evitar que se vayan a otra fila */
+}
+
+.emoji {
+    text-align: center;
+}
+
+.emoji img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #002366;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.emoji img:hover {
+    transform: scale(1.1);
+}
+
+.label {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.observaciones {
+    margin-top: 30px;
+}
+
+.observaciones textarea {
+    width: 90%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #002366;
+    background-color: #ffffff;
+    color: #002366;
+    resize: none;
+    font-size: 16px;
+}
+
+/* Ocultar elementos con la clase hidden */
+.hidden {
+    display: none;
+}
+
+.mensaje-gracias {
+    margin-top: 30px;
+}
+
+.mensaje-gracias h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.mensaje-gracias button {
+    padding: 12px 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mensaje-gracias button:hover {
+    background-color: #cc0000;
+}

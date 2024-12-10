@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Satisfacción</title>
+    <link rel="stylesheet" href="encuesta.css">
+    <script type="module" src="encuesta.js" defer></script>
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="navbar.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./img/Logos_Mesa de trabajo 1 copia.png" alt="Logo" />
+        </div>
+        <div class="nav-icons">
+            <button id="btn-back">
+                <img src="./img/flecha-izquierda.png" alt="Volver" class="icon">
+            </button>
+            <button id="btn-logout">
+                <img src="./img/cerrar-sesion.png" alt="Cerrar sesión" class="icon">
+            </button>
+        </div>
+    </nav>
+    <h1>Encuesta de Satisfacción</h1>
+    <h2>¿Cómo le atendieron en OK?</h2>
+    <div id="encuesta-satisfaccion">
+        <div class="emoji">
+            <img src="img/1-Photoroom.png" alt="Malo">
+            <span class="label">Malo</span>
+        </div>
+        <div class="emoji">
+            <img src="img/2-Photoroom.png" alt="Regular">
+            <span class="label">Regular</span>
+        </div>
+        <div class="emoji">
+            <img src="img/3-Photoroom.png" alt="Neutral">
+            <span class="label">Neutral</span>
+        </div>
+        <div class="emoji">
+            <img src="img/4-Photoroom.png" alt="Bueno">
+            <span class="label">Bueno</span>
+        </div>
+        <div class="emoji">
+            <img src="img/5-Photoroom.png" alt="Excelente">
+            <span class="label">Excelente</span>
+        </div>
+    </div>
+
+    <div class="observaciones">
+        <h3>Observaciones:</h3>
+        <textarea id="observaciones" rows="5" placeholder="Escriba sus comentarios aquí..."></textarea>
+    </div>
+    <script src="navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encuesta Finalizada</title>
+    <link rel="stylesheet" href="finEncuesta.css" />
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #002366;
+        color: #ffffff;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+      }
+
+      #agradecimiento {
+        margin-top: 50px;
+      }
+
+      #agradecimiento h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      #agradecimiento p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      button {
+        padding: 12px 20px;
+        background-color: #ff0000;
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #cc0000;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+          <img src="./img/Logos_Mesa de trabajo 1 copia.png" alt="Logo" />
+      </div>
+      <div class="nav-icons">
+          <button id="btn-back">
+              <img src="./img/flecha-izquierda.png" alt="Volver" class="icon">
+          </button>
+          <button id="btn-logout">
+              <img src="./img/cerrar-sesion.png" alt="Cerrar sesión" class="icon">
+          </button>
+      </div>
+  </nav>
+    <div id="agradecimiento">
+      <h1>¡Gracias por su respuesta!</h1>
+      <p>
+        Hemos recibido su valoración y observaciones. Su opinión es muy
+        importante para nosotros.
+      </p>
+      <button id="volver-formulario">Finalizar encuesta</button>
+    </div>
+    <script>
+      document
+        .getElementById("volver-formulario")
+        .addEventListener("click", () => {
+          window.location.href = "formulario.html";
+        });
+    </script>
+    <script src="navbar.js"></script>
+  </body>
+</html>

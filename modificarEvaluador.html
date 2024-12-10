@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Evaluadores</title>
+    <link rel="stylesheet" href="modificarEvaluador.css">
+    <script type="module" src="modificarEvaluador.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./img/Logos_Mesa de trabajo 1 copia.png" alt="Logo" />
+        </div>
+        <div class="nav-icons">
+            <button id="btn-back">
+                <img src="./img/flecha-izquierda.png" alt="Volver" class="icon">
+            </button>
+            <button id="btn-logout">
+                <img src="./img/cerrar-sesion.png" alt="Cerrar sesión" class="icon">
+            </button>
+        </div>
+    </nav>
+    <h1>Agregar Evaluadores</h1>
+    <form id="form-agregar-evaluador">
+        <input type="text" id="nombreApellido" placeholder="Nombre y Apellido" required>
+        <input type="text" id="ci" placeholder="CI (Contraseña)" required>
+        <input type="text" id="cargo" placeholder="Cargo" required>
+        <button type="submit" id="btn-guardar">Guardar</button>
+    </form>
+
+    <h2>Lista de Evaluadores</h2>
+    <table id="tabla-evaluadores">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre y Apellido</th>
+                <th>Cargo</th>
+                <th>Eliminar</th>
+                <th>Editar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filas dinámicas generadas por JavaScript -->
+        </tbody>
+    </table>
+    <script src="navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="scripts.js" defer></script>
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./img/Logos_Mesa de trabajo 1 copia.png" alt="Logo" />
+        </div>
+        <div class="nav-icons">
+            <button id="btn-back">
+                <img src="./img/flecha-izquierda.png" alt="Volver" class="icon">
+            </button>
+            <button id="btn-logout">
+                <img src="./img/cerrar-sesion.png" alt="Cerrar sesión" class="icon">
+            </button>
+        </div>
+    </nav>
+    <div id="login-container">
+        <h1>Iniciar Sesión</h1>
+        <form id="login-form">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+    </div>
+    <script type="module" src="login.js" defer></script>
+</body>
+</html>
